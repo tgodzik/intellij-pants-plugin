@@ -122,8 +122,10 @@
     <macro implementation="com.twitter.intellij.pants.macro.FilePathRelativeToBuiltRootMacro"/>
     <localInspection bundle="com.twitter.intellij.pants.PantsBundle" key="pants.info.python.plugin.missing"
                      groupName="Pants" enabledByDefault="true"
+                     implementationClass="com.twitter.intellij.pants.inspection.PythonFacetInspection"/>
+    <localInspection bundle="com.twitter.intellij.pants.PantsBundle" key="pants.info.python.plugin.missing"
+                     groupName="Pants" enabledByDefault="true"
                      implementationClass="com.twitter.intellij.pants.inspection.PythonPluginInspection"/>
-
     <buildProcess.parametersProvider implementation="com.twitter.intellij.pants.compiler.PantsBuildProcessParametersProvider"/>
 
     <projectConfigurable groupId="build.tools" groupWeight="110" id="reference.settingsdialog.project.pants"
